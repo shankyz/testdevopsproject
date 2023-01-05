@@ -5,7 +5,10 @@ pipeline{
     stages {
 
         stage('Git Checkout') {
-        git branch: 'Master', credentialsId: 'gitcred', url: 'https://github.com/shankyz/testdevopsproject.git'
+            
+            steps{
+                git branch: 'Master', credentialsId: 'gitcred', url: 'https://github.com/shankyz/testdevopsproject.git'
+            }
         }
     } 
 
