@@ -1,11 +1,12 @@
 pipeline{
     
-    agent any {
+    agent any
 
     stages {
 
-        stage('Git Checkout')
+        stage('Git Checkout') {
         git branch: 'Master', credentialsId: 'gitcred', url: 'https://github.com/shankyz/testdevopsproject.git'
+        }
     } 
-    }
+
 }
