@@ -10,6 +10,13 @@ pipeline{
                 git branch: 'Master', credentialsId: 'gitcred', url: 'https://github.com/shankyz/testdevopsproject.git'
             }
         }
+         stage('Maven Build) {
+            
+            steps{
+                sh 'mvn clean install'
+                
+            }
+        }
     } 
 
 }
