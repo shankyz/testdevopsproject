@@ -34,9 +34,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			    <groupId>org.apache.maven.plugins</groupId>
-	            <artifactId>maven-resources-plugin</artifactId>
-	            <version>3.1.0</version>
 				<executions>
 				<execution>
                     <id>repackage</id>
@@ -49,6 +46,11 @@
                 </execution>
             </executions>
 			</plugin>
+            
+			<plugin>
+			     <groupId>org.apache.maven.plugins</groupId>
+				 <artifactId>maven-resources-plugin</artifactId>
+				 <version>3.1.0</version>
 		</plugins>
 	</build>
 </project>
